@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #F1F1F1 url(https://ensomniacs.github.io/ifsc-3342/assets/img/background.png) fixed repeat top left;
+	color: #666;
+	font: 0.84em verdana;
+}
+
+#main {
+	width:50vw;
+	top: 100px;
+	margin:35px auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo {
+	float: left;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+    width: 75px;
+}
+.gallery {
+	width: 600px;
+}
+
+.box {
+	background: white;
+	width: 570px;
+	padding: 40px;
+	margin-bottom: 55px;
+	text-align: justify;
+}
+.box h1 {
+	color: #555;
+	font-family: tahoma,sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: left;
+	padding: 0px;
+	text-transform: uppercase;
+	line-height: 100%;
+	margin: 20px;
+	padding: 20px 0px 20px 0px;
+}
+h1 {
+	color: #555;
+	font-family: tahoma,sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: left;
+	padding: 0px;
+	text-transform: uppercase;
+	line-height: 100%;
+	margin: 0px;
+}
+h2 {
+	color: #ed6109;
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: normal;
+	border-left: 15px solid #ed6109;
+	padding-left: 15px; 
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 15px 5px;
+}
+
+h3 {
+	color: #83bad8;
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: normal;
+	border-bottom: 2px solid #83bad8;
+	border-width: 5px;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 15px 5px;
+}
+
+p {
+    margin-top: 10px;
+    text-indent: 25px;
+}
+
+ nav li{
+  list-style-type:none;
+  padding:0;
+}
+
+nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:0;
+  max-width:900px;
+  margin:20px auto;
+}
+
+nav a:link, nav a:visited{
+  color:white;
+  text-decoration:none;
+  background-color: #ed6109;
+  background-color: rgba(237,97,9,.4);
+  padding:8px 16px;
+  border-radius: 20px;
+  transition:.6s;
+}
+
+nav a:hover, nav a:active{
+  background-color: rgba(237,97,9,.8);
+}
+
+a {
+	color: #333 !important;
+	font: 9px verdana !important;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+a:hover {
+	color: #888 !important;
+}
+ul {
+	list-style-type: square;
+}
+.ui-tabs-nav {
+    background-color: #f1f1f1 !important; /*To overwrite jquery-ui.css*/
+    height: 20px;                        /*To stop nav block scaling of tab size*/
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: 0.2em 0.2em 0;
+    border: none;
+    background: none;
+    border-radius: 2px 2px 0 0; /*To affect only top corners*/
+}
+
+.ui-tabs .ui-tabs-nav li {
+    position: relative;    /*To overwrite jquery-ui.css*/
+    top: -10px !important;  /*To overwrite jquery-ui.css*/
+    border-color: #ccc;
+    border-widith: 1px 1px 0;
+	margin: 0 0 -10px 0;
+    background: #f1f1f1;
+}
+.ui-tabs-anchor{
+    color: black;   /*To overwrite jquery-ui.css*/
+}
+#main ul.ui-widget-header, #main ul.ui-widget-content, #main ul.ui-state-default, #main ul.ui-state-hover {
+    background: #f1f1f1;
+    border: none;
+}
+
+#main .ui-tabs-active a {
+   -moz-border-bottom-colors: none;
+   -moz-border-left-colors: none;
+   -moz-border-right-colors: none;
+   -moz-border-top-colors: none;
+   background-color: white;
+   border-color: #CCCCCC;
+   border-width: 1px 1px 0;
+   border-radius: 5px 5px 0 0;    /*To affect only top corners*/
+   color: #222222;
+   position: relative;
+   z-index: 5;
+   color: black;             /*To overwrite jquery-ui.css*/
+   text-decoration: none;     /*To overwrite jquery-ui.css*/
+   font-weight: bold !important;
+}    
+a:focus{                        
+ outline: none;   
+}
+
+/* The grid: columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #ed6109;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ed6109;
+  font-size: 35px;
+  cursor: pointer;
+}
