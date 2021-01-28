@@ -1,0 +1,120 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+#header {
+}
+#header h1 a {
+	background-image: url("../img/assessment-1.jpg");
+	background-position: center;
+	display: block;
+	height: 140px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+h2 {
+	color: #8C2A3C;
+	text-transform: uppercase;
+}
+h3 {
+	color: #1B594E;
+	text-transform: uppercase;
+}
+h4 {
+	color: #D96A29;
+}
+#nav {
+	background-color: #446559;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #446559;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #D96A29;
+}
+#content {
+	margin: 20px;
+}
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#content a:link, a:visited {
+	color: #261A23;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#content a:hover {
+	color: #1B594E;
+}
+#footer {
+	background-color: #261A23;
+	color: #FFF;
+	height: 25px;
+}
+#footer a:link, #footer a:visited {
+	color: #66D98E;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #1B594E;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.alert {
+	background: #1B594E;
+	color: #ffffff;
+	padding: 7px;
+}
+
+.img-right{
+  float: right;
+  border: 3px solid #1B594E;
+  padding: 5px;
+  margin: 10px 0px 10px 20px;
+}
