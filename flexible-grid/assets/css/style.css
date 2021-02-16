@@ -17,12 +17,10 @@ html {
 
    /* End of "Micro clearfix" */
  
-/*
-background-image:url("https://ensomniacs.github.io/ifsc-3342/flexible-grid/assets/img/grid.png");*/
-
+ 
 .container{
   max-width:956px;
-  background-image: url(../flexible-grid/assets/img/grid.png);
+/*  background-image: url(https://ensomniacs.github.io/ifsc-3342/flexible-grid/assets/img/grid.png); */
   border:1px solid #000;
   margin:20px auto;
 }
@@ -30,7 +28,7 @@ background-image:url("https://ensomniacs.github.io/ifsc-3342/flexible-grid/asset
 header.primary{
   /* 916px */
   width:95.816%;
-  background:rgba(0,0,0,.4);
+  background:rgba(100,100,100,.9);
   /* 20px */
   margin:2.092%;
   padding:2.173%;
@@ -38,51 +36,51 @@ header.primary{
 }
 
 #content {
-  /* 544px */
-  width:56.666%;
-  background:rgba(0,0,0,.6);
-  margin-left:2.083%;
+  /* 526px */
+  width:55.025%;
+ background:rgba(100,100,100,.9);
+  margin-left:2.092%;
   padding:2.173%;
   float:left;
 }
 
 aside{
-  width:37.083%;
-  background:rgba(0,0,0,.3);
-  margin-left:2.083%;
+  width:38.702%;
+ background:rgba(100,100,100,.9);
+  margin-left:2.092%;
   padding:2.173%;
   float:left;
 }
 
 footer.primary{
-  width:95.833%;
-  background:rgba(0,0,0,.4);
-  margin: 2.083%;
+  width:95.816%;
+ background:rgba(100,100,100,.9);
+  margin: 2.092%;
   padding: 2.173%;
   float:left;
 }
 
 
 .col-4{
-  width:37.083%;
+  width:38.702%;
   background:green;
-  margin-left:2.083%;
+  margin-left:2.092%;
   padding:2.173%;
   float:left;
 }
 
 .col-6{
-  width:56.666%;
+  width:55.021%;
   background:purple;
-  margin-left:2.083%;
+  margin-left:2.092%;
   padding:2.173%;
-  float:left; 
+  float: left; 
 }
 
 .col-12{
-  width:95.833%;
+  width:95.816%;
   background:rgba(0,0,0,.4);
-  margin: 2.083%;
+  margin: 2.092%;
   padding: 2.173%;
   float:left;
 }
