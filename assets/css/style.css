@@ -1,9 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
-* {
-	margin: 0px;
-	padding: 0px;
+
+/* apply a natural box layout model to all elements, but allowing components to change 
+
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+*/
+html {
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+
 body {
 	background: #F1F1F1 url(https://ensomniacs.github.io/ifsc-3342/assets/img/background.png) fixed repeat top left;
 	color: #666;
@@ -11,11 +20,8 @@ body {
 }
 
 #main {
-	width:50vw;
-	top: 100px;
-	margin:35px auto;
-    margin-right: auto;
-    margin-left: auto;
+	top: 1%;
+	margin:1%;
 }
 .logo {
 	float: left;
@@ -29,7 +35,7 @@ body {
 
 .box {
 	background: white;
-	width: 570px;
+	width: 98%;
 	padding: 40px;
 	margin-bottom: 55px;
 	text-align: justify;
@@ -126,100 +132,84 @@ a:hover {
 ul {
 	list-style-type: square;
 }
-.ui-tabs-nav {
-    background-color: #f1f1f1 !important; /*To overwrite jquery-ui.css*/
-    height: 20px;                        /*To stop nav block scaling of tab size*/
+
+
+.col {
+  width:46%;
+  margin:1%;
+  background:#261A23;
+  border-radius:6px;
+  padding: 2em;
+  float:left;
 }
 
-.ui-tabs .ui-tabs-nav {
-    margin: 0;
-    padding: 0.2em 0.2em 0;
-    border: none;
-    background: none;
-    border-radius: 2px 2px 0 0; /*To affect only top corners*/
+.col:nth-child(odd){
+  background:#5BA66E;
 }
 
-.ui-tabs .ui-tabs-nav li {
-    position: relative;    /*To overwrite jquery-ui.css*/
-    top: -10px !important;  /*To overwrite jquery-ui.css*/
-    border-color: #ccc;
-    border-widith: 1px 1px 0;
-	margin: 0 0 -10px 0;
-    background: #f1f1f1;
-}
-.ui-tabs-anchor{
-    color: black;   /*To overwrite jquery-ui.css*/
-}
-#main ul.ui-widget-header, #main ul.ui-widget-content, #main ul.ui-state-default, #main ul.ui-state-hover {
-    background: #f1f1f1;
-    border: none;
+.col p{
+  color:#fff;
 }
 
-#main .ui-tabs-active a {
-   -moz-border-bottom-colors: none;
-   -moz-border-left-colors: none;
-   -moz-border-right-colors: none;
-   -moz-border-top-colors: none;
-   background-color: white;
-   border-color: #CCCCCC;
-   border-width: 1px 1px 0;
-   border-radius: 5px 5px 0 0;    /*To affect only top corners*/
-   color: #222222;
-   position: relative;
-   z-index: 5;
-   color: black;             /*To overwrite jquery-ui.css*/
-   text-decoration: none;     /*To overwrite jquery-ui.css*/
-   font-weight: bold !important;
-}    
-a:focus{                        
- outline: none;   
+.fancy{display:none;}
+
+/* Max-Width Query*/
+
+@media screen and (max-width:600px){
+  .col{
+    float:none;
+    width:100%;
+    margin: 20px auto;
+  }
+  
+  .col:nth-child(odd){
+    background:#5BA66E;
+  }
+  .box { float: none;
+  width: 100%;
+  Margin: 20px auto;
+  }
 }
 
-/* The grid: columns that floats next to each other */
-.column {
-  float: left;
-  width: 45%;
-  padding: 10px;
+
+/* Ranged Query */
+
+@media screen and (max-width:800px) and (min-width:601px){
+  .col {
+    float:left;
+    width:46%;
+    margin:1%;
+  }
+  
+  .col:nth-child(odd), .col:nth-child(odd) p{
+    background:#261A23;
+    color:#5BA66E;
+  }  
+  .col:nth-child(even), .col:nth-child(even) p{
+      background: #5BA66E;
+      color: #261A23;
+  }
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+
+/* Min-width Query */
+@media screen and (min-width:1100px){
+  .col {
+    width:23%;
+    margin:1%;
+  }
 }
 
-.column img:hover {
-  opacity: 1;
-}
+  
+/*retina specific --- https://goo.gl/Pgu6y */
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: #ed6109;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: #ed6109;
-  font-size: 35px;
-  cursor: pointer;
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx)
+{
+	.fancy{display:block; text-align:center}
 }
