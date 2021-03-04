@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Eli Brewer -- Designer -- http://twitter.com/ensomniacs_
 
 # THANKS
 

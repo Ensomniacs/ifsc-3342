@@ -36,10 +36,13 @@ body {
 .box {
 	background: white;
 	width: 98%;
+	height: auto;
 	padding: 40px;
 	margin-bottom: 55px;
 	text-align: justify;
 }
+
+
 .box h1 {
 	color: #555;
 	font-family: tahoma,sans-serif;
@@ -64,15 +67,11 @@ h1 {
 	margin: 0px;
 }
 h2 {
-	color: #ed6109;
-	font-family: verdana;
-	font-size: 20px;
-	font-weight: normal;
-	border-left: 15px solid #ed6109;
-	padding-left: 15px; 
-	text-align: left;
+	font-family: tahoma;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: Center;
 	text-transform: uppercase;
-	margin: 0px 0px 15px 5px;
 }
 
 h3 {
@@ -92,37 +91,9 @@ p {
     text-indent: 25px;
 }
 
- nav li{
-  list-style-type:none;
-  padding:0;
-}
-
-nav ul{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  padding:0;
-  max-width:900px;
-  margin:20px auto;
-}
-
-nav a:link, nav a:visited{
-  color:white;
-  text-decoration:none;
-  background-color: #ed6109;
-  background-color: rgba(237,97,9,.4);
-  padding:8px 16px;
-  border-radius: 20px;
-  transition:.6s;
-}
-
-nav a:hover, nav a:active{
-  background-color: rgba(237,97,9,.8);
-}
-
 a {
-	color: #333 !important;
-	font: 9px verdana !important;
+	color: #888 !important;
+	font: .6em verdana !important;
 	text-decoration: none;
 	letter-spacing: 1px;
 }
@@ -144,7 +115,7 @@ ul {
 }
 
 .col:nth-child(odd){
-  background:#5BA66E;
+  background:#261A23;
 }
 
 .col p{
