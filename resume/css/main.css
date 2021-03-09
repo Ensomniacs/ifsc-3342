@@ -21,7 +21,7 @@ img{
 
 /* ------ Design Time Styles -------*/
 .container {
-  max-width:480px;
+  max-width:700px;
   margin:0 auto;
 }
 
@@ -41,7 +41,7 @@ img{
 /* ------ Global Styles -------*/
 
 body{
-  background:#efefef;
+  background:#5F637D;
   color:#222222;
   line-height:1.6;
 } 
@@ -52,7 +52,7 @@ a:link, a:visited{
 
 .container{
   margin:0 auto;
-  background:rgba(0,0,0,.15);
+  background:#F2F3FF;
 }
 
 nav.primary{
@@ -64,20 +64,18 @@ nav.primary{
 }
 
 nav a:link, nav a:visited{
-  border:1px solid #000;
   padding:8px 16px;
   text-align:center;
   text-decoration:none;
-  color:#222222;
   text-transform:uppercase;
   font-size:.75em;
-  background:rgba(0,0,0,.65);
+  background:rgba(95, 99, 125,.65);
   transition: background-color .5s ease;
-  color:#fff;
+  color:#222;
 }
 
 nav a:hover{
-   background:rgba(0,0,0,.95);
+   background:rgba(95, 99, 125,.95);
 }
 
 main{
@@ -92,6 +90,7 @@ main h1 {
   font-weight:400;
   font-variant:small-caps;
 }
+
 main h1:before, main h1:after {
   background-color: #222;
   content: '\a0';
@@ -100,9 +99,166 @@ main h1:before, main h1:after {
   position: relative;
   top: 0.77em;
 }
+
 main h1:before {
   margin-right:10px;
 }
+
 main h1:after {
   margin-left:10px;
 }
+
+p[itemprop="description"] {
+  font-size: .8em;
+}
+
+dl {
+  display: grid;
+  grid-template: auto / 8em 1fr;
+}
+
+dt {
+  font-weight: 700;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  grid-column: 1;
+}
+
+dd {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  grid-column: 2;
+}
+
+.related-links{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  padding:0;
+}
+
+.related-links a{
+  padding:8px 16px;
+  text-align:center;
+  text-decoration:none;
+  color:#222222;
+  text-transform:uppercase;
+  font-size:.75em;
+  transition: background-color 0.5s ease;
+  color:##5F637D;
+}
+
+.related-links a:hover{
+  background:rgba(255, 255, 255,.95);
+}
+
+.related-links li{
+  margin-right:20px;
+}
+
+#skills li {
+  list-style-type:square;
+}
+
+.job, .certificate{
+  border-bottom:1px solid #999;
+  padding-bottom:20px;
+}
+
+.job *[itemprop="jobTitle"], 
+.job *[itemprop="name"], 
+.job *[itemprop="url"], 
+.job *[itemprop="addressLocality"],
+.certificate *[itemprop="name"]
+{
+  display:block;
+}
+
+.job h3{
+  margin:20px 0 0 0;
+}
+
+footer{
+  text-align:center;
+padding:20px 0;
+}
+
+/* Reorder Source Using Grid */
+
+main.container{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "title"
+    "about"
+    "education"
+    "experience"
+    "skills";
+}
+
+.page-title{
+  grid-area: title;
+}
+#about{
+  grid-area: about;
+}
+#skills{
+  grid-area: skills;
+
+}
+#experience{
+  grid-area: experience;
+}
+#education{
+  grid-area: education;
+}
+
+
+/*----------------------Tablet Breakpoint-----------------------*/
+
+@media screen and (min-width:768px){
+main.container {
+    max-width:900px;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ". education";
+  }
+  header.container{
+    max-width:900px;
+  }
+  /* nested grid */
+#about {
+  display: grid;
+ grid-gap: 2em;
+ grid-template-columns: 300px 1fr auto;
+ grid-template-areas:
+ "bio details details"
+ "related related related"
+ 
+}
+.bio {
+grid-area: bio;
+}
+.details{
+  grid-area: details;
+}
+.related-links {
+  grid-area: related;
+  border-bottom: 1px solid #999;
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+/*----------------------Edge Case Tweaks-----------------------*/
+
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+  
