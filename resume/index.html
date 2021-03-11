@@ -4,15 +4,26 @@
   <head>  
   <link rel="stylesheet" href="css/main.css" type="text/css" /> 
   </head>
+  
   <header class="container">
+
     <!-- Main navigation -->
-    <nav class="primary">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-    </nav>
+   <nav class="primary">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Info</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+          </nav>
   </header>
+  
   <!-- Main -->
   <main itemscope itemtype="http://schema.org/Person" class="container">
   <h1 class="page-title">Eli Brewer</h1>
@@ -132,3 +143,11 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script> function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} </script>
