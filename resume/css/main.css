@@ -21,7 +21,7 @@ img{
 
 /* ------ Design Time Styles -------*/
 .container {
-  max-width:500px;
+  max-width:490px;
   margin:0 auto;
 }
 
@@ -87,7 +87,6 @@ nav a:hover{
 }
 
 
-
 main{
   padding: 1px 20px;
 }
@@ -102,7 +101,7 @@ main h1 {
 }
 
 main h1:before, main h1:after {
-  background-color: #222;
+  background-color: #5F637D;
   content: '\a0';
   flex-grow: 1;
   height: 1px;
@@ -130,14 +129,15 @@ dl {
 dt {
   font-weight: 700;
   padding: 10px 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #CDD1DB;
+  color: #5F637D;
   grid-column: 1;
 }
 
 dd {
   margin: 0;
   padding: 10px 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #CDD1DB;
   grid-column: 2;
 }
 
@@ -156,11 +156,11 @@ dd {
   text-transform:uppercase;
   font-size:.75em;
   transition: background-color 0.5s ease;
-  color:##5F637D;
 }
 
 .related-links a:hover{
   background:rgba(255, 255, 255,.95);
+  color:#5F637D;
 }
 
 .related-links li{
@@ -172,7 +172,7 @@ dd {
 }
 
 .job, .certificate{
-  border-bottom:1px solid #999;
+  border-bottom:1px solid #5F637D;
   padding-bottom:20px;
 }
 
@@ -225,46 +225,7 @@ main.container{
 }
 
 
-
-
-/*----------------------Tablet Breakpoint-----------------------*/
-
-@media screen and (min-width:768px){
-main.container {
-    max-width:900px;
-    grid-template-columns: 36.5% auto;
-    grid-template-areas:
-      "title title"
-      "about about"
-      "skills experience"
-      ". education";
-  }
-  header.container{
-    max-width:900px;
-  }
-  /* nested grid */
-#about {
-  display: grid;
- grid-gap: 2em;
- grid-template-columns: 300px 1fr auto;
- grid-template-areas:
- "bio details details"
- "related related related"
- 
-}
-.bio {
-grid-area: bio;
-}
-.details{
-  grid-area: details;
-}
-.related-links {
-  grid-area: related;
-  border-bottom: 1px solid #999;
-  padding-bottom: 50px;
-}
 /* -------------------- Hamburger Menu -----------------------*/
-
 
 ul {
   padding: 0;
@@ -272,6 +233,26 @@ ul {
   display: inline;
 }
 
+
+#menu
+{
+  position: absolute;
+  width: 75%;
+  height: 65px;
+  padding-left: 30px;
+  margin-top: -5px;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+  display: inline;
+}
 
 #menuToggle {
   display: flex;
@@ -338,37 +319,57 @@ ul {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
-  position: absolute;
-  width: 100%;
-  height: 65px;
-  padding-left: 60px;
-  margin-top: -5px;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(0, -100%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  transition-delay: 2s;
-  display: inline;
-}
-
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
+
+
+/* -------------------- Desktop Breakpoint -------------------- */
+
+@media screen and (min-width: 992px){
+  
 }
 
+/*----------------------Tablet Breakpoint-----------------------*/
+
+@media screen and (min-width:768px){
+main.container {
+    max-width:900px;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ". education";
+  }
+  header.container{
+    max-width:900px;
+  }
+  /* nested grid */
+#about {
+  display: grid;
+ grid-gap: 2em;
+ grid-template-columns: 300px 1fr auto;
+ grid-template-areas:
+ "bio details details"
+ "related related related"
+ 
+}
+.bio {
+grid-area: bio;
+}
+.details{
+  grid-area: details;
+}
+.related-links {
+  grid-area: related;
+  border-bottom: 1px solid #999;
+  padding-bottom: 50px;
+}
+}
 
 /*----------------------Edge Case Tweaks-----------------------*/
 
 @media only screen and (max-width: 460px) {
   .related-links li a svg{display:none;}
-  
-  
 }
