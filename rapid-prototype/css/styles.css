@@ -412,28 +412,29 @@ h6, .h6 {
   
 }
 
-#consume h2, #infect h2 {
+
+#consume h2, #infect h2, #enhance h2 {
   font-weight:700;
   letter-spacing: 0.7rem;
 }
 
-#consume h5{
+#consume h5 {
   margin-bottom: -5px;
   font-weight: 500;
   letter-spacing: 0.4rem;
 }
 
-#infect h5 {
+#infect h5, #enhance h5 {
   text-align: center;
   padding-bottom: 5px;
   color: #fff;
   text-transform: uppercase;
   border-bottom: 1px solid #fd0000;
-  width: 250px;
+  width: 225px;
   margin-left: 30%;
 }
 
-#infect h6{
+#infect h6, #enhance h6{
   margin-bottom: -5px;
   font-weight: 500;
   letter-spacing: 0.4rem;
@@ -443,8 +444,9 @@ h6, .h6 {
 
 #replicate h2 {
   font-weight:700;
+  font-size: 2.0rem;
   letter-spacing: 0.7rem;
-  background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(166, 0, 0, 0.9));
+  background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.9), rgba(166, 0, 0, 0.9));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -458,11 +460,11 @@ h6, .h6 {
   text-transform: uppercase;
   border-bottom: 1px solid #fd0000;
   width: 200px;
-  margin-left: 35%;
+  margin-left: 40%;
 }
 
 
-#replicate h5{
+#replicate h5 {
   font-size: 0.75rem;
   margin-bottom: -5px;
   font-weight: 500;
@@ -470,7 +472,7 @@ h6, .h6 {
   color: #ffffff;
 }
 
-#replicate h6{
+#replicate h6 {
   margin-bottom: -5px;
   font-weight: 500;
   letter-spacing: 0.4rem;
@@ -5591,6 +5593,7 @@ a.close.disabled {
   padding: 0.75rem;
 }
 
+/* Style the Image Used to Trigger the Modal */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -5599,6 +5602,22 @@ a.close.disabled {
 
 #myImg:hover {opacity: 0.7;}
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -5629,6 +5648,17 @@ a.close.disabled {
   to {transform:scale(1)}
 }
 
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -5636,35 +5666,6 @@ a.close.disabled {
   cursor: pointer;
 }
 
-.modal-open {
-  overflow: hidden;
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1; 
-  padding-top: 100px;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.9);
-}
-
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0.5rem;
-  pointer-events: none;
-}
-.modal.fade .modal-dialog {
-  transition: transform 0.3s ease-out;
-  transform: translate(0, -50px);
-}
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     transition: none;
@@ -6350,10 +6351,11 @@ button.bg-light:focus {
   background-color: #343a40 !important;
 }
 
-#consume .bg-dark {
+#consume .bg-dark, #enhance .bg-dark {
   background: linear-gradient(rgba(166, 0, 0, 1.0), rgba(0, 0, 0, 0.9));
   padding: 100px 50px;
 }
+
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
