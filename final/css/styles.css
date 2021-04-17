@@ -442,7 +442,7 @@ h6, .h6 {
   color: #ffffff;
 }
 
-#replicate h6 {
+#replicate h6, {
   margin-bottom: -5px;
   font-weight: 500;
   letter-spacing: 0.4rem;
@@ -452,6 +452,14 @@ h6, .h6 {
   font-size: 0.75rem;
   margin-bottom: -5px;
   font-weight: 500;
+  color: #A60000;
+}
+
+#MEM001 h7 {
+  font-size: 0.75rem;
+  margin-bottom: -5px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
   color: #A60000;
 }
 
