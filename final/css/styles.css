@@ -10326,6 +10326,12 @@ body {
   letter-spacing: 0.2rem;
   font-weight: 700;
 }
+
+.mask h1 {
+  font-szie: 5rem;
+  border-bottom: #fd0000 3px solid;
+  font-weight: 500;
+}
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
