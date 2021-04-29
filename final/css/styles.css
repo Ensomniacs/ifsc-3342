@@ -4490,9 +4490,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #090909;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4521,7 +4519,7 @@ input[type=button].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .card-title {
@@ -4555,7 +4553,7 @@ input[type=button].btn-block {
 }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 0.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -4607,6 +4605,7 @@ input[type=button].btn-block {
 .card-deck .card {
   margin-bottom: 0.75rem;
 }
+
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
@@ -5661,7 +5660,6 @@ a.close.disabled {
   pointer-events: auto;
   background: rbga(0, 0, 0, 0.2);
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
 }
