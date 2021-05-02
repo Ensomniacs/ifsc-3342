@@ -4607,6 +4607,9 @@ input[type=button].btn-block {
 }
 
 @media (min-width: 576px) {
+.card {
+    margin-left:1.5rem;
+}
   .card-deck {
     display: flex;
     flex-flow: row wrap;
@@ -10447,6 +10450,33 @@ body {
 }
 .gallery-box img {
     cursor: pointer;
+}
+
+.filter-button {
+font-size: 18px;
+border: 1px solid #090909;
+border-radius: 5px;
+text-align: center;
+color: #090909;
+margin-bottom: 30px;
+}
+
+.filter-button:hover {
+font-size: 18px;
+border: 1px solid #090909;
+border-radius: 5px;
+text-align: center;
+color: #ad0000;
+background-color: #090909;
+}
+
+.btn-dark:active .filter-button:active {
+background-color: #090909;
+color: #ad0000;
+}
+
+.gallery_product {
+margin-bottom: 30px;
 }
  
 .carousel .carousel-indicators {
