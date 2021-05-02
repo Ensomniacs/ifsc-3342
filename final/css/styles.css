@@ -10332,7 +10332,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background-image: src("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/SotP-Masthead.png");
+  background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/SotP-MastMobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10354,11 +10354,24 @@ body {
   letter-spacing: 0.2rem;
   font-weight: 700;
 }
+
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
+  .masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/SotP-Masthead.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 }
 @media (min-width: 992px) {
   .masthead {
