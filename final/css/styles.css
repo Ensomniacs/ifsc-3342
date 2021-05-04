@@ -10373,6 +10373,14 @@ body {
   font-weight: 700;
 }
 
+.masthead2 h2 {
+  max-width: 35rem;
+  font-size: 1.0rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  padding-top: 10rem;
+}
+
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
@@ -10397,13 +10405,18 @@ body {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/AGTeam1.png");
+  background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/AGTeam1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
-
+.masthead2 h2 {
+  max-width: 45rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
 }
 @media (min-width: 992px) {
   .masthead {
