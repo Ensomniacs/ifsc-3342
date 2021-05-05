@@ -6388,14 +6388,14 @@ button.bg-light:focus {
   height: auto;
   min-height: 25rem;
   background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/consumemobile.png");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   padding: 100px 50px;
 }
 
-#enhance .bg-dark {
+.ehance-section {
   background: linear-gradient(rgba(166, 0, 0, 1.0), rgba(0, 0, 0, 0.9));
   padding: 100px 50px;
 }
@@ -10471,7 +10471,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 45rem;
+  min-height: 25rem;
   padding: 15rem 0;
   background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/consume1.png");
   background-position: top;
@@ -10529,10 +10529,10 @@ padding-top: 10rem;
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 45rem;
+  min-height: 25rem;
   padding: 15rem 0;
   background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/consume1.png");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
