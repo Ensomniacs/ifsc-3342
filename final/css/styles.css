@@ -6382,11 +6382,24 @@ button.bg-light:focus {
   background-color: #343a40 !important;
 }
 
-#consume .bg-dark, #enhance .bg-dark {
-  background: linear-gradient(rgba(166, 0, 0, 1.0), rgba(0, 0, 0, 0.9));
+#consume .bg-dark {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 45rem;
+  background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/consume.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-top: 7px solid rgba(255, 255, 255, 0.9);
   padding: 100px 50px;
 }
 
+#enhance .bg-dark {
+  background: linear-gradient(rgba(166, 0, 0, 1.0), rgba(0, 0, 0, 0.9));
+  padding: 100px 50px;
+}
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -10404,6 +10417,7 @@ body {
     font-size: 4rem;
     line-height: 4rem;
   }
+  
   .masthead {
   position: relative;
   width: 100%;
@@ -10452,6 +10466,20 @@ body {
 
 .about-section p {
   margin-bottom: 5rem;
+}
+
+.consume-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 45rem;
+  padding: 15rem 0;
+  background-image: url("https://ensomniacs.github.io/ifsc-3342/final/assets/img/gallery/consume1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-top: 7px solid rgba(255, 255, 255, 0.9);
 }
 
 }
