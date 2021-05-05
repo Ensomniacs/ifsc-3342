@@ -10621,20 +10621,18 @@ padding-top: 10rem;
 
 .filter-button {
 font-size: 18px;
-border: 1px solid #090909;
+border: 1px solid #fd0000;
 border-radius: 5px;
 text-align: center;
-color: #090909;
+color: #fd0000;
 margin-bottom: 30px;
 }
 
 .filter-button:hover {
 font-size: 18px;
-border: 1px solid #090909;
-border-radius: 5px;
+border: 1px solid #DE3E3E;
 text-align: center;
-color: #ad0000;
-background-color: #090909;
+color: #DE3E3E;
 }
 
 .btn-dark:active .filter-button:active {
