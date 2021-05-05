@@ -6395,9 +6395,21 @@ button.bg-light:focus {
   padding: 100px 50px;
 }
 
-.ehance-section {
-  background: linear-gradient(rgba(166, 0, 0, 1.0), rgba(0, 0, 0, 0.9));
+.infect-section {
+  background: linear-gradient(rgba(166, 0, 0, 1.0), rgba(0, 0, 0, 0.8));
   padding: 100px 50px;
+  border-top: 3px solid #000;
+}
+
+.replicate-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,1));
+  padding-bottom: 3rem;
+  border-bottom: 3px solid #fd0000;
+}
+
+.enhance-section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
