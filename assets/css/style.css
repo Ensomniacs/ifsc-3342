@@ -73,7 +73,7 @@ html {
   }
   
   
-  a:link, a:visited{
+  .col a:link, a:visited{
 	width: 25%;
 	padding:8px 16px;
 	text-align: left;
@@ -86,7 +86,7 @@ html {
 	color:#222;
   }
   
- a:hover{
+.col a:hover{
 	color: #5F637D;
 	border-bottom: rgba(205, 209, 219, .95) solid 5px;
   }
@@ -98,7 +98,21 @@ html {
   p.review {
 	  font-size: 0.8rem;
   }
+ 
+ .review  a:link, a:visited{
+	width: 25%;
+	text-align: left;
+	text-transform:uppercase;
+	font-size:.85em;
+	background:rgba(167, 1881 222, .65);
+	transition: background-color, border, color .5s ease;
+	color:#222;
+  }
   
+ .review a:hover{
+	color: #5F637D;
+  }
+ 
   footer{
 	text-align:center;
   padding:20px 0;
